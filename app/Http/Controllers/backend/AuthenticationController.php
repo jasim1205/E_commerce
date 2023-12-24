@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Backend;
+namespace App\Http\Controllers\backend;
 
 use App\Http\Controllers\Controller;
 
@@ -26,12 +26,12 @@ class AuthenticationController extends Controller
             $user->email=$request->EmailAddress;
             $user->password=Hash::make($request->password);
             $user->role_id=2;
-            if($user->save())
+            if($user->save()){
                 return redirect('login')->with('success','Successfully Registred');
-            else
+            }else
                 return redirect('login')->with('danger','Please try again');
         }catch(Exception $e){
-            //dd($e);
+            dd($e);
             return redirect('login')->with('danger','Please try again');
         }
 

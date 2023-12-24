@@ -37,7 +37,6 @@
 		<div class="section-authentication-cover">
 			<div class="">
 				@yield('content')
-				<!--end row-->
 			</div>
 		</div>
 	</div>
