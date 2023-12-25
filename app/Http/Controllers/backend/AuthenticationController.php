@@ -18,8 +18,9 @@ class AuthenticationController extends Controller
         return view('backend.authentication.register');
     }
 
-    public function signUpStore(SignupRequest $request){
-        try{
+    public function signUpStore(SignupRequest $request)
+    {
+        
             $user=new User;
             $user->name_en=$request->FullName;
             $user->contact_no_en=$request->contact_no_en;
@@ -30,11 +31,7 @@ class AuthenticationController extends Controller
                 return redirect('login')->with('success','Successfully Registred');
             }else
                 return redirect('login')->with('danger','Please try again');
-        }catch(Exception $e){
-            dd($e);
-            return redirect('login')->with('danger','Please try again');
-        }
-
+                dd($e);
     }
     public function signInForm(){
         return view('backend.authentication.login');

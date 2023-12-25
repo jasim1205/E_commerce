@@ -28,6 +28,7 @@
 	<link rel="stylesheet" href="{{asset('public/assets/css/dark-theme.css')}}"/>
 	<link rel="stylesheet" href="{{asset('public/assets/css/semi-dark.css')}}"/>
 	<link rel="stylesheet" href="{{asset('public/assets/css/header-colors.css')}}"/>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
 	<title>Syndron - Bootstrap 5 Admin Dashboard Template</title>
 </head>
 
@@ -989,7 +990,7 @@
 							<li>
 								<div class="dropdown-divider mb-0"></div>
 							</li>
-							<li><a class="dropdown-item d-flex align-items-center" href="javascript:;"><i class="bx bx-log-out-circle"></i><span>Logout</span></a>
+							<li><a class="dropdown-item d-flex align-items-center" href="{{route('logOut')}}"><i class="bx bx-log-out-circle"></i><span>Logout</span></a>
 							</li>
 						</ul>
 					</div>

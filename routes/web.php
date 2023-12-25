@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\backend\Dashboard;
+use App\Http\Controllers\backend\DashboardController as dashboard;
 use App\Http\Controllers\backend\AuthenticationController as auth;
 
 /*
@@ -22,6 +22,6 @@ Route::get('/logout', [auth::class,'signOut'])->name('logOut');
 
 
 Route::middleware(['checkauth'])->prefix('admin')->group(function(){
-    Route::get('dashboard', [Dashboard::class,'index'])->name('dashboard');
+    Route::get('dashboard', [dashboard::class,'index'])->name('dashboard');
 });
 

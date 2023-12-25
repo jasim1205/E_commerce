@@ -25,7 +25,7 @@ class checkAuth
             if(!$user)
                 return redirect()->route('logOut');
             else
-                return $nest($request);
+                return $next($request);
         }
         return redirect()->route('logOut');
     }
