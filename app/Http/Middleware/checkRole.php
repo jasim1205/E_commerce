@@ -8,6 +8,7 @@ use App\Models\Permission;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Session;
+use Toastr;
 
 class checkRole
 {

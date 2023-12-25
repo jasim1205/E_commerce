@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers\backend;
 
+use App\Models\Permission;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class User extends Controller
+class PermissionController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $user = User::get();
-        return view('backend.user.index',compact('user'));
+        //
     }
 
     /**
@@ -21,7 +21,7 @@ class User extends Controller
      */
     public function create()
     {
-        
+        //
     }
 
     /**
@@ -35,7 +35,7 @@ class User extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Permission $permission)
     {
         //
     }
@@ -43,7 +43,7 @@ class User extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Permission $permission)
     {
         //
     }
@@ -51,7 +51,7 @@ class User extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Permission $permission)
     {
         //
     }
@@ -59,7 +59,7 @@ class User extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Permission $permission)
     {
         //
     }
