@@ -29,6 +29,7 @@
 	<link rel="stylesheet" href="{{asset('public/assets/css/semi-dark.css')}}"/>
 	<link rel="stylesheet" href="{{asset('public/assets/css/header-colors.css')}}"/>
 	<link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 	<title>Syndron - Bootstrap 5 Admin Dashboard Template</title>
 </head>
 
@@ -1179,6 +1180,9 @@
 	<script src="{{asset('public/assets/js/index.js')}}"></script>
 	<!--app JS-->
 	<script src="{{asset('public/assets/js/app.js')}}"></script>
+	<script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+        <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+        {!! Toastr::message() !!}
 </body>
 
 
