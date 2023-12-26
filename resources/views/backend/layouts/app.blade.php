@@ -83,6 +83,8 @@
 						</li>
 						<li> <a href="{{route('brand.index')}}"><i class='bx bx-radio-circle'></i>brand</a>
 						</li>
+						<li> <a href="{{route('category.index')}}"><i class='bx bx-radio-circle'></i>Category List</a>
+						</li>
 					</ul>
 				</li>
 				

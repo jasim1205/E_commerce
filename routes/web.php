@@ -5,6 +5,7 @@ use App\Http\Controllers\backend\DashboardController as dashboard;
 use App\Http\Controllers\backend\AuthenticationController as auth;
 use App\Http\Controllers\backend\UserController as user;
 use App\Http\Controllers\backend\BrandController as brand;
+use App\Http\Controllers\backend\CategoryController as category;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,7 @@ Route::middleware(['checkauth'])->prefix('admin')->group(function(){
 Route::middleware(['checkrole'])->prefix('admin')->group(function(){
     Route::resource('user', user::class);
     Route::resource('brand', brand::class);
+    Route::resource('category', category::class);
 });
 
 
